@@ -22,13 +22,13 @@
                     <li class="menu__item">
                         <a href="index.html"><h1 class="menu__titulo"></h1></a>
                     </li>
-                    <li class="menu__item"><a href="Categorias.html" class="">Categorias</a></li>
                     <li class="menu__item"> <a href="#">Sobre Nós</a></li>
                     <li class="menu__item"><a href="Contato.html">Fale Conosco</a></li>
 
                     <li class="menu__item menu__pesquisar">
-                        <label class="menu__label" for="pesquisar"><input class="menu__input" type="search" name="" placeholder="O que você procura?"
-                            id="pesquisar"></label>
+                        <input class="menu__input" type="search" name="" placeholder="O que você procura?"
+                            id="pesquisar">
+                        <img src="./assets/img/icone-busca.png">
                     </li>
                 </ul>
             </nav>
@@ -36,29 +36,92 @@
 
         <main class="principal">
 
-            <section class="banner">
-                <img src="./assets/img/im1.jpg" alt="Banner cor amarela">
-                <img src="./assets/img/im2.jpg" alt="Banner cor lilás">
-                <img src="./assets/img/im3.jpg" alt="Banner cor verde">
-                <img src="./assets/img/im4.jpg" alt="Banner cor laranja">
-                <img src="./assets/img/im1.jpg" alt="Banner cor amarela">
-                <img src="./assets/img/im2.jpg" alt="Banner cor lilás">
-                <img src="./assets/img/im3.jpg" alt="Banner cor verde">
-                <img src="./assets/img/im4.jpg" alt="Banner cor laranja">
-                <img src="./assets/img/im1.jpg" alt="Banner cor amarela">
-                <img src="./assets/img/im2.jpg" alt="Banner cor verde">
-                <img src="./assets/img/im3.jpg" alt="Banner cor amarela">
-                <img src="./assets/img/im4.jpg" alt="Banner cor lilás">
+            <section class="categorias">
+                <div class="categorias__destaques">
+                    <h3 class="destaques destaques__excecao">Categorias</h3>
+                </div>
+                <ul class="categorias__lista">
+                    <li class="categorias__item" id="cat1">Brasil</li>
+                    <li class="categorias__item" id="cat2">Negócios</li>
+                    <li class="categorias__item" id="cat3">Ciências</li>
+                    <li class="categorias__item" id="cat4">Esportes</li>
+                    <li class="categorias__item" id="cat5">Internacional</li>
+                    <li class="categorias__item" id="cat6">Saúde</li>
+                    <li class="categorias__item" id="cat7">Tecnologia</li>
+                    <li class="categorias__item" id="cat8">Entretenimento</li>
+                </ul>
             </section>
-        
+
+            <section class="eventos">
+                <div class="categorias__destaques">
+                    <div class="destaques">
+                        <h3 class="destaques__titulo">Destaques</h3>
+                        <div class="destaques__barra"></div>
+                    </div>
+                </div>
+
+                <div class="slider">
+                    <div class="slides">
+
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <input type="radio" name="radio-btn" id="radio4">
+
+                        <div class="slide first"><img id="slide0" src="" alt="Primeiro Slide"></div>
+                        <div class="slide"><img id="slide1" src="" alt="Segundo Slide"></div>
+                        <div class="slide"><img id="slide2" src="" alt="Terceiro Slide"></div>
+                        <div class="slide"><img id="slide3" src="" alt="Quarto Slide"></div>
+
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="manual-navigation">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                    </div>
+
+                </div>
+
+                <div class="categorias__destaques">
+                    <div class="destaques">
+                        <h3 class="destaques__titulo">Recentes</h3>
+                        <div class="destaques__barra"></div>
+                    </div>
+                </div>
+
+                <ul class="eventos__lista">
+                    
+                </ul>
+
+                <div class="categorias__destaques">
+                    <div class="destaques">
+                        <h3 class="destaques__titulo">Ver mais</h3>
+                        <div class="destaques__barra"></div>
+                        <div>
+                            <img src="./assets/img/icone-seta-voltar.png">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </main>
+
         <footer class="rodape">
             <ul class="rodape__lista">
                 <li>
                     <h3 class="rodape__titulo">Período</h3>
                 </li>
                 <li>Este dia</li>
-                <li>Esta semana</li>
+                <li>Este semana</li>
                 <li>Este mês</li>
                 <li>Este trimestre</li>
             </ul>
@@ -85,6 +148,8 @@
                 <p class="copyright">&copy Copyright Trabalho DSW2 - 2023</p>
             </div>
         </footer>
-    </body>
 
+        <script src="main.js"></script>
+        <script src="script.js"></script>
+    </body>
 </html>
